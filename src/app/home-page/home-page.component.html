@@ -1,0 +1,67 @@
+<html>
+  <body>
+    <div id="camera">
+      <app-handtracker (onPrediction)="prediction($event)"></app-handtracker>
+      <div [innerHTML]="gesture" style="color: white"></div>
+    </div>
+    <div class="container">
+      <!-- <div class="col-sm"> -->
+        <div id="header">
+          <!-- <img id="logo" src="logo.jpg"> -->
+          <p id="headerText">Tic Tac Toe</p>
+        </div>
+        <div id="box">
+          <div id="showTurn" [innerHTML]="showTurn"></div>	
+          <div id="showScore" [innerHTML]="showScore"></div>
+
+          <div id="showKey">
+            <table>
+              <thead>
+                <tr>
+                  <th colspan="3">Tic Tac Toe Key</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>One Closed Hand</td>
+                  <td>One Open Hand</td>
+                  <td>One hand Pointing</td>
+                </tr>
+                <tr>
+                  <td>Two Closed Hands</td>
+                  <td>Two Open Hands</td>
+                  <td>Two Hands Pointing</td>
+                </tr>
+                <tr>
+                  <td>Hand Open and Hand Closed</td>
+                  <td>Hand Open and Hand Pointing</td>
+                  <td>Hand Closed and Hand Pointing</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          
+          <div id="row1">
+            <input class="square" id="b11" type="button" [value]="buttons[0][0]" (click)="takeTurn(0, 0)">
+            <input class="square" id="b12" type="button" [value]="buttons[0][1]" (click)="takeTurn(0, 1)">
+            <input class="square" id="b13" type="button" [value]="buttons[0][2]" (click)="takeTurn(0, 2)">	
+          </div>
+          <div id = "row2">
+            <input class="square" id="b21" type="button" [value]="buttons[1][0]" (click)="takeTurn(1, 0)">
+            <input class="square" id="b22" type="button" [value]="buttons[1][1]" (click)="takeTurn(1, 1)">
+            <input class="square" id="b23" type="button" [value]="buttons[1][2]" (click)="takeTurn(1, 2)">
+          </div>
+          <div id = "row3">
+            <input class="square" id="b31" type = "button" [value]="buttons[2][0]" (click)="takeTurn(2, 0)">
+            <input class="square" id="b32" type = "button" [value]="buttons[2][1]"(click)="takeTurn(2, 1)">
+            <input class="square" id="b33" type = "button" [value]="buttons[2][2]" (click)="takeTurn(2, 2)">
+          </div>
+          <br/>
+          <input class="reset" type = "button" value="Reset" (click)="clearAll()">
+        </div>
+      <!-- </div>   -->
+      <!-- <div class="col-sm">
+      </div> -->
+    </div>
+  </body>
+</html>

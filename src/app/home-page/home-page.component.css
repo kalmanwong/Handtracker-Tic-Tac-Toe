@@ -1,0 +1,126 @@
+html, body{
+  min-height: 100%;
+  /* background-image: url(zDgfV3V.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center; */
+  margin:0;
+  padding:0;
+}
+
+  
+#camera{
+  float: left;
+}
+
+#box {
+  border: solid 5px black;
+  background-color: ivory;
+  margin-left: auto;
+  margin-right: auto;
+  width: 47em;
+  text-align: left;
+  padding: 2em;
+}
+#header {
+  border: solid 5px black;
+  background-color: white;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 30em;
+}
+#headerText {
+  text-align: center;
+  font-size: 2em;
+  font-family: Georgia;
+  font-variant: small-caps;
+}
+#logo {
+  width: 80px;
+  height: 80px;
+  float: left;
+  padding: 10px;
+}
+#showTurn {
+  position: absolute;
+  border: solid 5px black;
+  background-color: white;
+  margin-left: 395px;
+  margin-right: auto;
+  width: 15em;
+  top: 12em;
+  text-align: center;
+  padding: 1.9em;
+  font-size: 16px;
+  font-family: Georgia;
+}
+
+#showScore {
+  position: absolute;
+  border: solid 5px black;
+  background-color: white;
+  margin-left: 395px;
+  margin-right: auto;
+  width: 15.8em;
+  top: 18em;
+  text-align: center;
+  padding: 1.5em;
+  font-size: 16px;
+  font-family: Georgia;
+}
+
+#showKey {
+  position: absolute;
+  border: solid 5px black;
+  background-color: white;
+  margin-left: 395px;
+  margin-right: auto;
+  width: 15.8em;
+  top: 24.2em;
+  text-align: center;
+  padding: 1.5em;
+  font-size: 16px;
+  font-family: Georgia;
+}
+/*============Buttons============*/
+.square {
+  background-color: gray;
+  color: white;
+  border: solid 2px black;
+          padding: 32px;
+  display: inline-block;
+          text-align: center;
+          font-size: 25px;
+  font-weight: bold;
+          margin: 4px 2px;
+          width: 100px;
+          height: 100px;
+}
+.reset {
+  background-color: pink;
+  color: black;
+  border: solid 2px black;
+          padding: 2px 2px;
+  display: inline-block;
+          text-align: center;
+          font-size: 17px;
+          margin: 8px;
+          width: 90px;
+          height: 40px;
+  margin-left: 110px;
+  margin-right: auto;
+}
+
+table,
+td {
+  border: 1px solid #333;
+  font-size: small;
+}
+
+thead,
+tfoot {
+  background-color: #333;
+  color: #fff;
+}

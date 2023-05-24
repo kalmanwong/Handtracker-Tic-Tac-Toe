@@ -1,0 +1,22 @@
+html, body{
+  min-height: 100%;
+  background-color: black;
+  /* background-image: url(zDgfV3V.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center; */
+  margin:0;
+  padding:0;
+}
+.bg {
+  /* The image used */
+  background-image: url("./home-page/zDgfV3V.jpg");
+
+  /* Full height */
+  height: 100%; 
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
